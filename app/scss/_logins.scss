@@ -1,0 +1,77 @@
+.login{
+    .container{
+        border: solid 1px magenta;
+        @include breakpoint-up(large){
+            display: block;
+            align-items: center;
+        }
+    }
+
+    .login-email{
+        
+         @include breakpoint-up(large){
+          
+            text-align: center;
+        }
+
+        .input-group{
+            margin-bottom: 25px;
+           
+            input{
+                
+                width: 50%;
+                height: 50%;
+                border: 2px solid #e7e7e7;
+                padding: 15px 20px;
+                font-size: 1rem;
+                border-radius: 30px;
+                background: transparent;
+                outline: none;
+                transition: .3s;
+                border: solid 1px magenta;
+
+                @include breakpoint-up(large){
+                    width: 50%;
+                    height: 50%;
+                    text-align: center;
+                }
+              
+            }
+
+            .btn{
+                border: solid 1px magenta;
+                @include breakpoint-up(large){
+                    width: 50%;
+                    height: 50%;
+                }
+                
+              
+                width: 100%;
+                padding: 15px 20px;
+                text-align: center;
+                border: none;
+                background-image: linear-gradient(to right,$greenDark,$greenLight);
+                outline: none;
+                border-radius: 30px;
+                font-size: 1.2rem;
+                color: #FFF;
+                cursor: pointer;
+                transition: .3s;
+            }
+        }
+
+        .login-text{
+
+            
+            color: #111;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 20px;
+            display: block;
+            text-transform: capitalize;
+        }
+    }
+  
+    
+}

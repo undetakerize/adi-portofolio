@@ -1,0 +1,126 @@
+.feature{
+
+    background: linear-gradient(to bottom,#1f1f1f,#404146);
+    text-align: center;
+    
+    @include breakpoint-up(medium){
+        text-align: left;
+    }
+
+    &__intro{
+        color: white;
+        margin-bottom: 3.75rem;
+        @include breakpoint-up(large){
+            width: 60%;
+         
+        }
+
+        h2{
+            color: white;
+            font-size: 1.64rem;
+        }
+
+        a{
+            color: white;
+        }
+    }
+
+    &__grid{
+
+        @include breakpoint-up(medium){
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+
+    }
+    &__grid-con{
+        display:flex;
+            flex-wrap: wrap;
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: 600px 400px auto 40px;
+            padding: 10px;
+             
+            
+        }
+    }
+
+    &__grid-item{
+       h1{
+           color: whitesmoke;
+       }
+
+       p{
+        color:#a7a7a7;
+       }
+      
+
+        @include breakpoint-up(large){
+        // border: 1px solid black;
+            width: 100%;
+            padding: 20px;
+        
+            text-align: left;
+            h1{
+                font-size: 2.4rem;
+                color: whitesmoke;
+            }
+            h2{
+                color:whitesmoke;
+        
+            }
+            p{
+                color:#a7a7a7;
+                font-size: 1.2rem;
+               text-align: left;
+            }
+            
+        }
+    }
+
+    &__item{
+        
+        padding:0.9375rem;
+
+
+        @include breakpoint-up(medium){
+            flex:0 0 50%;
+        }
+        @include breakpoint-up(large){
+            flex:1;
+        }
+    }
+
+    &__icon{
+        margin-bottom: 1.875rem;
+        
+        @include breakpoint-up(large){
+            margin-bottom: 2.75rem;
+        }
+       
+    }
+
+    &__title{
+        font-size: 1.65rem;
+        font-weight: 800;
+        line-height: 1.15;
+        color: $white;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(large){
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__description{
+        color: $veryLightGray;
+        font-style: 0.875rem;
+        line-height: 1.5;
+        @include breakpoint-up(large){
+
+        }
+    }
+
+}
